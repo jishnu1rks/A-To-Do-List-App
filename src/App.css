@@ -1,0 +1,85 @@
+.jumbotron  {
+   margin: 50px 50px auto;
+}
+
+.jumbotron div h1,p {
+    text-align:center;
+    padding:10px;
+}
+
+.jumbotron div p  button {
+   margin-right:20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.todoListMain {
+    margin:100px auto;
+}
+
+.todoListMain .header input[type="text"] 
+{
+    padding:5px 0px 5px 2px;
+    width:370px;
+    background:#ffff7f;
+}
+
+.todoListMain .header  input[type="submit"]
+{
+    margin-left:2%;
+    padding:5px 30px;
+    background-color:#ADD8E6;
+    color:#262626;
+    font-weight: bold;
+}
+
+/* Todo List */
+
+.Todolist li 
+{
+    list-style: none;
+}
+
+.Todolist li span{
+    border:1px solid #ccc;   
+    border-radius: 5px;
+    width:380px;
+    height:auto ;
+    word-wrap:break-word;
+    display: inline-block;
+    text-align:left;
+    padding:7px;
+    margin:8px 0px;
+   
+}
+
+.Todolist li button {
+    margin:-15px 10px;
+}
+
+/* css in home .js */
+
+.logout_btn {
+    text-transform: uppercase;
+    float:right;
+    margin-right:5%;
+    background-color:red;
+    padding:5px;
+    color:#fff;
+}
+
+.signup  
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:10px;
+    width:370px;
+    background:#ffff7f;
+}
+
+
