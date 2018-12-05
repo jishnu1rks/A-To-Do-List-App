@@ -24,13 +24,12 @@ class Login extends Component {
 
   login(){
     if(this.state.username && this.state.password){
-      PostData('login/',this.state).then((result) => {
-       let responseJson = result;
-       console.log(responseJson.userData);
-      //  if(responseJson.userData){         
-      //    sessionStorage.setItem('userData',JSON.stringify(responseJson));
-      //    this.setState({redirectToReferrer: true});
-      //  }
+      PostData('login',this.state).then((result) => {
+        let responseJson = result;
+        if(responseJson.userData){         
+          sessionStorage.setItem('userData',JSON.stringify(responseJson));
+          this.setState({redirectToReferrer: true});
+        }
        
       });
     }
@@ -42,13 +41,13 @@ class Login extends Component {
   render() {
 
     
-    // if (this.state.redirectToReferrer) {
-    //   return (<Redirect to={'/home'}/>)
-    // }
+    if (this.state.redirectToReferrer) {
+      return (<Redirect to={'/home'}/>)
+    }
    
-    // if(sessionStorage.getItem('userData')){
-    //   return (<Redirect to={'/home'}/>)
-    // }
+    if(sessionStorage.getItem('userData')){
+      return (<Redirect to={'/home'}/>)
+    }
 
 
     return (

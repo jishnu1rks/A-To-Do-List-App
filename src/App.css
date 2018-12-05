@@ -1,3 +1,4 @@
+
 .jumbotron  {
    margin: 50px 50px auto;
 }
@@ -83,3 +84,9 @@ h1 {
 }
 
 
+.footer {
+    position: absolute;
+    bottom:10px;
+    left:0;
+    right:0;
+}

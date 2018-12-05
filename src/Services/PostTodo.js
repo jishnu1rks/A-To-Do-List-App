@@ -1,7 +1,7 @@
-export function PostData(type, userData) {
+export function PostTodo(type, userData) {
     //let BaseURL = 'https://api.thewallscript.com/restful/';
     // let BaseURL = 'http://localhost/PHP-Slim-Restful/api/';
-    let BaseURL = 'http://localhost/jishnu/todoapp/public/index.php/api/user/';
+    let BaseURL = 'http://localhost/jishnu/todoapp/public/index.php/api/todo/';
 
 
     return new Promise((resolve, reject) =>{

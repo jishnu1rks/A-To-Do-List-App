@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import '../App.css';
 
 class Footer extends Component {
   render() {
     return (
       <div>
-        <p>All rights Reserved @ 2018</p>
+        <p className="footer">All rights Reserved @ 2018</p>
       </div>
     );
   }

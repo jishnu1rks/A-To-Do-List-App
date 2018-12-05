@@ -26,8 +26,9 @@ class Registration extends Component {
  
 
   signup() {
+    
     if(this.state.username && this.state.password && this.state.email && this.state.name){
-    PostData('add',this.state).then((result) => {
+    PostData('signup',this.state).then((result) => {
       let responseJson = result;
       if(responseJson.userData){         
         sessionStorage.setItem('userData',JSON.stringify(responseJson));
@@ -50,7 +51,7 @@ class Registration extends Component {
 
 
     return (    
-      <div className=" signup">
+      <div className="signup">
         <h4>Signup</h4>
         <FormGroup>
         <ControlLabel>Email</ControlLabel>

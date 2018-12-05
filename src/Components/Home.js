@@ -27,7 +27,7 @@ class Home extends Component {
             return ;
         }
         let newTodo = {
-            id: uuid.v4(),
+            id: this.state.todos.length + 1 ,
             todo: text
         }    
         if(this.submitValue.current.value == "Add"){
@@ -74,8 +74,9 @@ class Home extends Component {
  
         return (
         <div>
+                <a href="/" className="logout_btn" onClick={this.clearUser}>Logout</a><br />
             <div className="todoListMain text-center">
-                    <a href="/" className="logout_btn" onClick={this.clearUser}>Logout</a>
+                    
                     <div className="header">
                         <form onSubmit={this.addItem}>
                             <input ref={this.textInput} type="text" placeholder="Enter task" />
